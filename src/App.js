@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ExpenseApp from "./component/ExpenseApp";
 
 function App() {
   return (
     <div className="App">
-    
+      <header>
+        <h2 className="title">ExpenseTrackerApp</h2>
+      </header>
+      <main>
+        <ExpenseApp />
+      </main>
     </div>
   );
 }
