@@ -1,10 +1,17 @@
-const View = () => {
+import { useState } from "react";
+import TransactionForm from "./TransactionForm";
+
+const View = ({ income, expense ,onTransaction}) => {
+  const [isShow, setIsShow] = useState(false);
   return (
     <>
       <div className="sectionTop">
         <p className="balance">Balance: {income - expense} $</p>
-        <buttton className="btn">Add</buttton>
+        <button className={`${"btn"} ${isShow?"cancel":""}`} onClick={() => setIsShow(!isShow)}>
+          {isShow? "Cancel":"Add"}
+        </button>
       </div>
+      {isShow && <TransactionForm onTransaction={onTransaction}/>}
       <div className="sectionBottom">
         <div className="expense">
           <span className="label"> Expense: </span>
