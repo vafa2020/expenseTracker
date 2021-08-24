@@ -8,11 +8,80 @@
   font-family: Montserrat;
   padding-top: 30px;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+}
+.main {
+  width: 30rem;
+}
 .title {
   color: red;
+  text-align: center;
   background-color: rgb(99, 99, 99);
   padding: 10px 20px;
   border-radius: 8px;
   width: 300px;
+}
+.ExpenseApp {
+  margin-top: 20px;
+}
+.sectionTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.balance {
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn {
   text-align: center;
+  background-color: green;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 80px;
+  cursor: pointer;
+}
+.sectionBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.expense {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  height: 150px;
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+.label{
+  font-size: 20px;
+  font-weight: bold;
+}
+.amountExp{
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.amountInc{
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+.income {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  height: 150px;
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 8px;
 }
