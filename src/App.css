@@ -19,9 +19,9 @@
 .title {
   color: red;
   text-align: center;
-  background-color: rgb(209, 205, 205);
+  border:3px solid rgb(0, 175, 245);
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 250px;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@
 }
 .btn {
   text-align: center;
-  background-color: rgb(0, 179, 0);
+  background-color: rgb(0, 175, 245);
   color: #fff;
   padding: 10px;
   border-radius: 8px;
@@ -60,10 +60,11 @@
 }
 .expense {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   width: 200px;
   height: 150px;
-  border: 3px solid rgb(202, 202, 202);
+  border: 3px solid rgb(0, 175, 245);
   padding: 10px;
   border-radius: 8px;
 }
@@ -84,10 +85,11 @@
 }
 .income {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   width: 200px;
   height: 150px;
-  border: 3px solid rgb(202, 202, 202);
+  border: 3px solid rgb(0, 175, 245);
   padding: 10px;
   border-radius: 8px;
 }
@@ -101,6 +103,7 @@
   flex-direction: column;
   align-items: center;
   margin: 10px 0;
+  width: 100%;
 }
 .item {
   width: 100%;
@@ -135,4 +138,11 @@
   font-size: 17px;
   padding-right: 10px;
   cursor: pointer;
+}
+.search{
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: 2px solid rgb(0, 175, 245);
+  border-radius: 8px;
 }

@@ -20,7 +20,7 @@ const TransactionForm = ({ onTransaction }) => {
     setFormField({
       desc: "",
       amount: 0,
-      type: "",
+      type: "expense",
     });
   };
   return (
