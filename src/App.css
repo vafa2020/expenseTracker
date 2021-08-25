@@ -106,11 +106,15 @@
   width: 100%;
 }
 .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin-top: 10px;
   padding: 10px;
   background-color: rgb(221, 221, 221);
   border-radius: 8px;
+  font-weight: bold;
 }
 .input {
   padding: 10px;
@@ -120,10 +124,10 @@
   outline: none;
 }
 .itemEX {
-  border-right: 10px solid red;
+  border-right: 5px solid red;
 }
 .itemIco {
-  border-right: 10px solid green;
+  border-right: 5px solid green;
 }
 .radioBox{
   display: flex;

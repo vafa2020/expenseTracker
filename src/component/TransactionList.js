@@ -21,9 +21,9 @@ const TransactionList = ({ transactionList }) => {
     );
     setFilterTransactionList(filterd);
   };
-if(transactionList.length===0){
-    return <h2>insert some transaction</h2>
-}
+  if (transactionList.length === 0) {
+    return <h2>insert some transaction</h2>;
+  }
   return (
     <div className="list">
       <input
@@ -33,18 +33,21 @@ if(transactionList.length===0){
         className="search"
         placeholder="search of transActions"
       />
-      {filterTransactionList.length?filterTransactionList.map((item) => {
-        return (
-          <div
-            className={`${"item"} ${
-              item.type === "expense" ? "itemEX" : "itemIco"
-            }`}
-            key={item.id}
-          >
-            {item.desc}
-          </div>
-        );
-      }):"not match!!!"}
+      {filterTransactionList.length
+        ? filterTransactionList.map((item) => {
+            return (
+              <div
+                className={`${"item"} ${
+                  item.type === "expense" ? "itemEX" : "itemIco"
+                }`}
+                key={item.id}
+              >
+                <span> {item.desc}</span>
+                <span> {item.amount}</span>
+              </div>
+            );
+          })
+        : "not match!!!"}
     </div>
   );
 };

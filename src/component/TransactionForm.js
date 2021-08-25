@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TransactionForm = ({ onTransaction }) => {
+const TransactionForm = ({ onTransaction,setIsShow }) => {
   const [formField, setFormField] = useState({
     desc: "",
     amount: 0,
@@ -17,6 +17,7 @@ const TransactionForm = ({ onTransaction }) => {
     event.preventDefault();
 
     onTransaction(formField);
+    setIsShow(false)
     setFormField({
       desc: "",
       amount: 0,

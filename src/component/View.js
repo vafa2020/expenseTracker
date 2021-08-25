@@ -11,7 +11,7 @@ const View = ({ income, expense ,onTransaction}) => {
           {isShow? "Cancel":"Add"}
         </button>
       </div>
-      {isShow && <TransactionForm onTransaction={onTransaction}/>}
+      {isShow && <TransactionForm onTransaction={onTransaction} setIsShow={setIsShow}/>}
       <div className="sectionBottom">
         <div className="expense">
           <span className="label"> Expense: </span>
